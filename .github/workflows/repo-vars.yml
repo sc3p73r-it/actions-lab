@@ -8,6 +8,7 @@ jobs:
   docker:
     runs-on: ubuntu-latest
     env:
+      CONTAINER_REGISTRY: ${{ vars.CONTAINER_REGISTRY }}
       DOCKER_USERNAME: ${{ vars.DOCKER_USERNAME}}
       DOCKER_PASSWORD: ${{ vars.DOCKER_PASSWORD }}
       IMAGE_NAME: ${{ vars.IMAGE_NAME }}
